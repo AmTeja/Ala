@@ -1,0 +1,53 @@
+name: ala_mod
+description: A Very Good Project created by Very Good CLI.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: 3.3.8
+
+dependencies:
+  api_client:
+    path: packages/api_client
+  articles_repository:
+    path: packages/articles_repository
+  auth_repository:
+    path: packages/auth_repository
+  bloc: ^8.1.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.1
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+  posts_repository:
+    path: packages/posts_repository
+  equatable: ^2.0.5
+  flutter_secure_storage: ^7.0.1
+  formz: ^0.4.1
+  dynamic_color: ^1.5.4
+  timeago: ^3.3.0
+
+dev_dependencies:
+  bloc_test: ^9.1.0
+  build_runner:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  very_good_analysis: ^3.1.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins/poppins-regular.ttf
+        - asset: assets/fonts/poppins/poppins-medium.ttf
+          weight: 500
+        - asset: assets/fonts/poppins/poppins-bold.ttf
+          weight: 700
+          
+  assets:
+    - assets/fonts/poppins/
